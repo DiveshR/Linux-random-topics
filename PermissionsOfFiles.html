@@ -1,0 +1,25 @@
+Permissions Of Files.
+
+1. Read (Lowest Privilege)
+ - Authority to open and read file.
+ - Read on directory gives you the ability to list its content.
+
+ 2. Write 
+  - Authority to modify the contents of a file.
+  - Write on directory gives you the authority to add,remove and rename files stored.
+  
+  3. Execute
+   - You cannot run a program unless the execute permission is set. 
+   
+    123456789 10
+    -rw-rw-r-- 
+   
+    r-read
+    w-write
+    x-execute
+
+    * First - indicates file or directory if - then its a file other wise a directory.
+    * First second character r to - defines User which shows (user has permission to read and write a file but does'nt have permission to execute a file)
+    * From 5 character which is r to 8 character defines Group ownership and which shows (Group has permission to read and write a file but does'nt have permission to execute a file)
+    * from 8 to 10 which is r to 10th character defines other ownership and shows (other has permission only to read  but does'nt have permission to write and execute a file)
+
