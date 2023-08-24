@@ -1,0 +1,35 @@
+changing File Permissions
+
+1. Absolute (Numeric) Mode
+
+0 for no permission
+1 for execute
+2 for write
+4 for read
+
+764 
+Note: using 764 it will overwite the previous permission.
+
+7 indicates Read+write+execute(rwx) 4+2+1=7 for user.
+6 indicates Read+write(rw-) 4+2=6 for Group
+4 indicates Read(r--) 4 for others
+
+
+2. Symbolic Mode (for all 3 user types)
+
+Note: using Symbolic mode you can add, remove or overrides the Permissions just like Absolute mode.
+We uses characters instead of numbers.
+
++ for adding permission
+- for removing permission
+= sets and overrides Permissions
+
+ u user/owner
+ g group
+ o others
+ a all
+
+ u+rwx -add permission to user read,write or execute
+ g+rwx -add permission to group read,write or execute
+ o+rwx -add permission to others read,write or execute
+ all+rwx -add permission to all read,write or execute
